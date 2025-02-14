@@ -69,7 +69,7 @@ document.addEventListener('DOMContentLoaded', function() {
                     icon: "success",
                     title: "Congrats. You won the grand prize 💎",
                     text: "You got something better than flowers and chocolate. You got the gift of knowledge. You get to see and learn this code",
-                    footer: "<a href='https://github.com/' target='_blank'>Link to code's repository</a>"
+                    footer: "<a href='https://github.com/tetrax-prog/valentine-gift.git' target='_blank'>Link to code's repository</a>"
                 }),
                 start(),
                 stop()
