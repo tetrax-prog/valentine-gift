@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', function() {
             gameState.openedBoxes.push(boxIndex);
             giftBoxes[boxIndex].classList.add('opened');
             
-            showToast(`You got: beautiful flower\n The odds of you winning the grand prize is 2/3 if you choose another box. Would you like to keep this prize or try another box?`, "info", "You won a beautiful a flower");
+            showToast(`You got: beautiful flower and maybe a gift of your choosing.\n The odds of you winning the grand prize is 2/3 if you choose another box but you will loose this gift. Would you like to keep this prize or try another box?`, "info", "You won a beautiful a flower");
             gameMessage.textContent = 'You can keep your prize or try another box';
             gameState.stage = 'second-choice';
 
@@ -68,7 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 Swal.fire({
                     icon: "success",
                     title: "Congrats. You won the grand prize 💎",
-                    text: "You got something better than flowers and chocolate. You got the gift of knowledge. You get to see and learn this code",
+                    text: "You got something better than flowers and chocolate. You got the gift of knowledge. You get to see and learn how this program works",
                     footer: "<a href='https://github.com/tetrax-prog/valentine-gift.git' target='_blank'>Link to code's repository</a>"
                 }),
                 start(),
@@ -77,7 +77,7 @@ document.addEventListener('DOMContentLoaded', function() {
                 Swal.fire({
                     icon: "info",
                     title: "Gift remains a flower",
-                    text: "Better luck next time! The grand prize was in the other box.",
+                    text: "The grand prize was in the other box but your gift remains a flower or a box of chocolates or a trip to the mall or maybe all three of them",
                 })
             );
             
